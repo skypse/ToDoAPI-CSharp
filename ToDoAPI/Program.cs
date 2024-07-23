@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Connection String:
 builder.Services.AddDbContext<ToDoListDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("LifeBandCs")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ToDoCS")));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
